@@ -1,0 +1,9 @@
+*_GamutMedicina*.exr
+*_GamutMedicina*.png
+*.pyc
+*.pyo
+.DS_Store
+.idea
+.ipynb_checkpoints/
+__pycache__
+poetry.lock
