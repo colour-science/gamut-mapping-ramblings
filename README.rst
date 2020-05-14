@@ -20,20 +20,22 @@ and `Martin Smekal <https://community.acescentral.com/t/vfx-work-in-acescg-with-
 Installation
 ------------
 
+`Poetry <https://python-poetry.org/>`__ is required to install main
+dependencies and `Node.js <https://nodejs.org/>`__ for the
+`Jupyter Lab <https://jupyter.org/>`__ Matplotlib extension.
+
+.. code-block:: bash
+
+    $ poetry install
+    $ poetry run python -c "import imageio;imageio.plugins.freeimage.download()"
+    $ jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib
+
 Run
 ~~~
 
 .. code-block:: bash
 
-    $ jupyter lab
-
-Development
------------
-
-.. code-block:: bash
-
-    $ poetry install
-    $ jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib
+    $ poetry run jupyter lab
 
 Code of Conduct
 ---------------
@@ -44,7 +46,7 @@ is available on the `Code of Conduct <https://www.colour-science.org/code-of-con
 About
 -----
 
-| **Colour - Dash** by Colour Developers
-| Copyright © 2018-2020 – Colour Developers – `colour-developers@colour-science.org <colour-developers@colour-science.org>`__
+| **Gamut Mapping Ramblings** by Colour Developers
+| Copyright © 2019-2020 – Colour Developers – `colour-developers@colour-science.org <colour-developers@colour-science.org>`__
 | This software is released under terms of New BSD License: https://opensource.org/licenses/BSD-3-Clause
-| `https://github.com/colour-science/colour-dash <https://github.com/colour-science/colour-dash>`__
+| `https://github.com/colour-science/gamut-mapping-ramblings <https://github.com/colour-science/gamut-mapping-ramblings>`__
