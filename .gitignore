@@ -7,3 +7,4 @@
 .ipynb_checkpoints/
 __pycache__
 poetry.lock
+resources/images/Colour_Wheel.exr
