@@ -20,9 +20,27 @@ and `Martin Smekal <https://community.acescentral.com/t/vfx-work-in-acescg-with-
 Installation
 ------------
 
-`Poetry <https://python-poetry.org/>`__ is required to install main
-dependencies and `Node.js <https://nodejs.org/>`__ for the
+`Node.js <https://nodejs.org/>`__ is required for the
 `Jupyter Lab <https://jupyter.org/>`__ Matplotlib extension.
+
+Pip
+~~~
+
+`Pip <https://pip.pypa.io/en/stable/installing/>`__ can be used to install the
+main dependencies, assuming you have created and activated a
+`Virtual Environment <https://docs.python.org/3/tutorial/venv.html>`__:
+
+.. code-block:: bash
+
+    $ pip install -r requirements.txt
+    $ python -c "import imageio;imageio.plugins.freeimage.download()"
+    $ jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib
+
+Poetry
+~~~~~~
+
+`Poetry <https://python-poetry.org/>`__ can be used to install the main
+dependencies:
 
 .. code-block:: bash
 
@@ -30,8 +48,18 @@ dependencies and `Node.js <https://nodejs.org/>`__ for the
     $ poetry run python -c "import imageio;imageio.plugins.freeimage.download()"
     $ jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib
 
-Run
+Usage
+-----
+
+Pip
 ~~~
+
+.. code-block:: bash
+
+    $ jupyter lab
+
+Poetry
+~~~~~~
 
 .. code-block:: bash
 
