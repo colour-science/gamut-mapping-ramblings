@@ -14,8 +14,11 @@ Study Models Implemented in `notebooks/gamut_mapping_medicina_01.ipynb`:
 - `Mansencal and Scharfenberg (2020) <https://community.acescentral.com/t/gamut-mapping-in-cylindrical-and-conic-spaces/2870/4>`__
 - `Smith (2020) <https://community.acescentral.com/t/rgb-saturation-gamut-mapping-approach-and-a-comp-vfx-perspective/>`__
 
-Images courtesy `Carol Payne <https://www.dropbox.com/sh/u6z2a0jboo4vno8/AAB-10qcflhpr0C5LWhs7Kq4a?dl=0>`__
-and `Martin Smekal <https://community.acescentral.com/t/vfx-work-in-acescg-with-out-of-gamut-devices/2385>`__.
+Images courtesy of:
+
+- `Thomas Mansencal <https://community.acescentral.com/t/spectral-images-generation-and-processing/>`__
+- `Carol Payne <https://www.dropbox.com/sh/u6z2a0jboo4vno8/AAB-10qcflhpr0C5LWhs7Kq4a?dl=0>`__
+- `Martin Smekal <https://community.acescentral.com/t/vfx-work-in-acescg-with-out-of-gamut-devices/2385>`__.
 
 Installation
 ------------
