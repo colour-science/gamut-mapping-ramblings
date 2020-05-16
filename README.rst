@@ -14,6 +14,8 @@ The following study models are implemented in **notebooks/gamut_mapping_medicina
 - `Mansencal and Scharfenberg (2020) <https://community.acescentral.com/t/gamut-mapping-in-cylindrical-and-conic-spaces/2870/4>`__
 - `Smith (2020) <https://community.acescentral.com/t/rgb-saturation-gamut-mapping-approach-and-a-comp-vfx-perspective/>`__
 
+Various compression functions are implemented in **notebooks/gamut_mapping_compression_functions_01.ipynb**:
+
 Images courtesy of:
 
 - `Thomas Mansencal <https://community.acescentral.com/t/spectral-images-generation-and-processing/>`__
