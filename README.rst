@@ -15,7 +15,7 @@ notebook.
 - `Mansencal and Scharfenberg (2020) <https://community.acescentral.com/t/gamut-mapping-in-cylindrical-and-conic-spaces/2870/4>`__
 - `Smith (2020) <https://community.acescentral.com/t/rgb-saturation-gamut-mapping-approach-and-a-comp-vfx-perspective/>`__
 
-The notebook is intended to be seen with the **JupyterLab Dark Theme**:
+The notebook is intended to be read with the **JupyterLab Dark Theme**:
 
 ..  image:: https://raw.githubusercontent.com/colour-science/gamut-mapping-ramblings/master/docs/_static/JupyterLab_Dark_Theme.png
 
