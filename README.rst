@@ -57,7 +57,7 @@ dependencies:
 
     $ poetry install
     $ poetry run python -c "import imageio;imageio.plugins.freeimage.download()"
-    $ jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib
+    $ poetry run jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib
 
 Usage
 -----
