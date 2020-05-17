@@ -63,4 +63,4 @@ wcwidth==0.1.9
 webencodings==0.5.1
 widgetsnbextension==3.5.1
 zipp==1.2.0
--e git+https://github.com/colour-science/colour.git@d9ef0a5aece912cbc18fb2d49b0bbd3c70b2abc0#egg=colour
+-e git+https://github.com/colour-science/colour.git@8ed24e8e6b4911148df15a527e03799195228405#egg=colour

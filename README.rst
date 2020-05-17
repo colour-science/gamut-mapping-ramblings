@@ -31,11 +31,18 @@ Images courtesy of:
 Installation
 ------------
 
-`Node.js <https://nodejs.org/>`__ is required for the
-`Jupyter Lab <https://jupyter.org/>`__ Matplotlib extension.
+Docker
+~~~~~~
+
+.. code-block:: bash
+
+    $ docker build -t colourscience/gamut-mapping-ramblings:latest "."
 
 Pip
 ~~~
+
+`Node.js <https://nodejs.org/>`__ is required for the
+`Jupyter Lab <https://jupyter.org/>`__ Matplotlib extension.
 
 `Pip <https://pip.pypa.io/en/stable/installing/>`__ can be used to install the
 main dependencies, assuming you have created and activated a
@@ -50,6 +57,9 @@ main dependencies, assuming you have created and activated a
 Poetry
 ~~~~~~
 
+`Node.js <https://nodejs.org/>`__ is required for the
+`Jupyter Lab <https://jupyter.org/>`__ Matplotlib extension.
+
 `Poetry <https://python-poetry.org/>`__ can also be used to install the main
 dependencies:
 
@@ -61,6 +71,13 @@ dependencies:
 
 Usage
 -----
+
+Docker
+~~~~~~
+
+.. code-block:: bash
+
+    $ docker run -v $PWD:/home/colour-science/gamut-mapping-ramblings -p 8888:8888 colourscience/gamut-mapping-ramblings:latest
 
 Pip
 ~~~
