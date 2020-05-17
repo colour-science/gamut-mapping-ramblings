@@ -46,7 +46,7 @@ main dependencies, assuming you have created and activated a
 Poetry
 ~~~~~~
 
-`Poetry <https://python-poetry.org/>`__ can be used to install the main
+`Poetry <https://python-poetry.org/>`__ can also be used to install the main
 dependencies:
 
 .. code-block:: bash
