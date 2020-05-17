@@ -10,10 +10,14 @@ Ramblings in the world of Scene-Referred Gamut Mapping as part of the
 `ACES VWG <https://community.acescentral.com/c/aces-development-acesnext/vwg-aces-gamut-mapping-working-group/80>`__.
 
 The following study models are implemented in the `gamut_mapping_medicina_01 <https://github.com/colour-science/gamut-mapping-ramblings/blob/master/notebooks/gamut_mapping_medicina_01.ipynb>`__
-notebook:
+notebook.
 
 - `Mansencal and Scharfenberg (2020) <https://community.acescentral.com/t/gamut-mapping-in-cylindrical-and-conic-spaces/2870/4>`__
 - `Smith (2020) <https://community.acescentral.com/t/rgb-saturation-gamut-mapping-approach-and-a-comp-vfx-perspective/>`__
+
+The notebook is intended to be seen with the **JupyterLab Dark Theme**:
+
+..  image:: https://raw.githubusercontent.com/colour-science/gamut-mapping-ramblings/master/docs/_static/JupyterLab_Dark_Theme.png
 
 Various compression functions are implemented in the `gamut_mapping_compression_functions_01 <https://github.com/colour-science/gamut-mapping-ramblings/blob/master/notebooks/gamut_mapping_compression_functions_01.ipynb>`__
 notebook.
