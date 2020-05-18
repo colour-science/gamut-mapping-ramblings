@@ -24,7 +24,9 @@ notebook.
 
 Images courtesy of:
 
+- `Justin Holt <https://www.dropbox.com/sh/u6z2a0jboo4vno8/AAB-10qcflhpr0C5LWhs7Kq4a?dl=0>`__
 - `Thomas Mansencal <https://community.acescentral.com/t/spectral-images-generation-and-processing/>`__
+- `Fabian Matas <https://community.acescentral.com/t/spectral-images-generation-and-processing/>`__
 - `Carol Payne <https://www.dropbox.com/sh/u6z2a0jboo4vno8/AAB-10qcflhpr0C5LWhs7Kq4a?dl=0>`__
 - `Martin Smekal <https://community.acescentral.com/t/vfx-work-in-acescg-with-out-of-gamut-devices/2385>`__
 
