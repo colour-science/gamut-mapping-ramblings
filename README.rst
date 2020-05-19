@@ -40,6 +40,11 @@ Docker
 
     $ docker build -t colourscience/gamut-mapping-ramblings:latest "."
 
+*Note*
+
+Allocated memory will need to be increased in Docker preferences:
+*Preferences --> Resources --> Advanced*, 8Go should be enough.
+
 Pip
 ~~~
 
