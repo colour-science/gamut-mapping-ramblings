@@ -45,6 +45,7 @@ ipywidgets = { version = "*"}
 jupyter = { version = "*"}
 jupyterlab = { version = "*"}
 matplotlib = { version = "*"}
+ipynb = { version = "*"}
 
 [build-system]
 requires = [ "poetry>=0.12" ]
