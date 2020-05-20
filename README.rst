@@ -1,7 +1,7 @@
 Gamut Mapping Ramblings
 =======================
 
-..  image:: https://raw.githubusercontent.com/colour-science/gamut-mapping-ramblings/master/docs/_static/Gamut_Medicina_01.png
+..  image:: https://raw.githubusercontent.com/colour-science/gamut-mapping-ramblings/master/resources/images/Gamut_Medicina_01.png
 
 Introduction
 ------------
@@ -17,7 +17,7 @@ notebook.
 
 The notebook is intended to be read with the **JupyterLab Dark Theme**:
 
-..  image:: https://raw.githubusercontent.com/colour-science/gamut-mapping-ramblings/master/docs/_static/JupyterLab_Dark_Theme.png
+..  image:: https://raw.githubusercontent.com/colour-science/gamut-mapping-ramblings/master/resources/images/JupyterLab_Dark_Theme.png
 
 Various compression functions are implemented in the `gamut_mapping_compression_functions_01 <https://github.com/colour-science/gamut-mapping-ramblings/blob/master/notebooks/gamut_mapping_compression_functions_01.ipynb>`__
 notebook.

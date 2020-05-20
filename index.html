@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Colour Developers">
+
+  <title>John Hunter - Excellence in Plotting - 2020</title>
+
+  <link href="./resources/css/BeerSlider.css" rel="stylesheet">
+  <link href="./resources/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: rgb(18, 18, 18);
+      color: rgb(208, 208, 208);
+      font-size: 1.15rem;
+    }
+
+    a,
+    a:hover {
+      color: #3498DB;
+    }
+
+    .navbar {
+      background-color: #242424 !important;
+    }
+
+    .navbar-brand {
+      color: #3498DB !important;
+    }
+
+    .hand-pointer-on-hover {
+      cursor: pointer;
+    }
+
+    #content {
+      margin-top: 5rem;
+    }
+  </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+</head>
+
+<body data-gr-c-s-loaded="true">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" style="z-index: 1024">
+    <a class="navbar-brand"
+      href="https://acescentral.com/c/aces-development-acesnext/vwg-aces-gamut-mapping-working-group/80">Academy ACES -
+      VWG</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDefault"
+      aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarDefault">
+      <ul class="navbar-nav mr-auto">
+        <li>
+          <a class="nav-link" href="https://jhepc.github.io/">John Hunter - Excellence in Plotting - 2020</a>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="nav-link" href="https://colour-science.org">colour-science.org</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main role="main" class="container">
+    <div id="content" class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <figure class="figure">
+            <img src="./resources/images/Gamut_Medicina_01.png"
+              alt="Mansencal and Scharfenberg (2020) - HSV Control Based Study Model"
+              class="figure-img img-fluid hand-pointer-on-hover gamut-medicina-1">
+            <figcaption class="figure-caption">Colour Developers Scientific Plot Entry for <a
+                href="https://jhepc.github.io/">John Hunter - Excellence in
+                Plotting - 2020</a>. Mansencal and Scharfenberg (2020) HSV Control Based Study Model applied
+              onto synthetic imagery. The Cornell Box scene is spectrally rendered with <a
+                href="https://mitsuba2.readthedocs.io/">Mitsuba
+                2: A Retargetable Forward and Inverse Renderer</a>.
+            </figcaption>
+          </figure>
+
+          <h2 id="Abstract">Gamut Mapping of Scene-Referred Exposure Values<a class="anchor-link" href="#Abstract"></a>
+          </h2>
+          <p>
+            The <a href="https://www.oscars.org/science-technology/sci-tech-projects/aces">Academy Color Encoding System
+              (ACES)</a>a> is a free, open, device-independent color management and image interchange system used in the
+            production of movies, series or games. ACES adoption has increased during the last decade and the system is
+            becoming a successful standard in the Media and Entertainment Industry. However, amid of the growing
+            success, ACES users are frequently reporting defects occurring on their imagery while using the system.
+          </p>
+          <p>The </p>
+          <figure class="figure">
+            <img src="./resources/images/Gamut_Medicina_02.png"
+              alt="Mansencal and Scharfenberg (2020) - HSV Control Based Study Model"
+              class="figure-img img-fluid hand-pointer-on-hover gamut-medicina-2">
+            <figcaption class="figure-caption">Mansencal and Scharfenberg (2020) HSV Control Based Study Model applied
+              onto a photograph.
+            </figcaption>
+          </figure>
+
+          <figure class="figure">
+            <img src="./resources/images/Gamut_Medicina_03.png"
+              alt="Mansencal and Scharfenberg (2020) - HSV Control Based & Smith (2020) RGB Saturation Study Models"
+              class="figure-img img-fluid hand-pointer-on-hover gamut-medicina-3">
+            <figcaption class="figure-caption">Mansencal and Scharfenberg (2020) HSV Control Based Study Model compared
+              with Smith (2020) RGB Saturation Study Model.
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./resources/js/jquery-3.3.1.slim.min.js"></script>
+  <script src="./resources/js/popper.min.js"></script>
+  <script src="./resources/js/bootstrap-material-design.min.js"></script>
+
+  <script>
+    $(".gamut-medicina-1").click(function () {
+      var source;
+      if ($(this).attr("src") == "./resources/images/Gamut_Medicina_01.png") {
+        $(this).attr("src", "./resources/images/Gamut_Medicina_01_Disabled.png");
+      } else {
+        $(this).attr("src", "./resources/images/Gamut_Medicina_01.png");
+      }
+    });
+    $(".gamut-medicina-2").click(function () {
+      var source;
+      if ($(this).attr("src") == "./resources/images/Gamut_Medicina_02.png") {
+        $(this).attr("src", "./resources/images/Gamut_Medicina_02_Disabled.png");
+      } else {
+        $(this).attr("src", "./resources/images/Gamut_Medicina_02.png");
+      }
+    });
+    $(".gamut-medicina-3").click(function () {
+      var source;
+      if ($(this).attr("src") == "./resources/images/Gamut_Medicina_03.png") {
+        source = "./resources/images/Gamut_Medicina_04.png";
+        $(this).attr("src", source);
+      } else {
+        source = "./resources/images/Gamut_Medicina_03.png";
+        $(this).attr("src", source);
+      }
+    });
+  </script>
+</body>
+
+</html>
