@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="Colour Developers">
 
@@ -41,7 +42,9 @@
     }
   </style>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML">
+  </script>
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {
@@ -62,24 +65,29 @@
 </head>
 
 <body data-gr-c-s-loaded="true">
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" style="z-index: 1024">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"
+    style="z-index: 1024">
     <a class="navbar-brand"
-      href="https://acescentral.com/c/aces-development-acesnext/vwg-aces-gamut-mapping-working-group/80">Academy ACES -
+      href="https://acescentral.com/c/aces-development-acesnext/vwg-aces-gamut-mapping-working-group/80">Academy
+      ACES -
       VWG</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDefault"
-      aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarDefault" aria-controls="navbarDefault"
+      aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarDefault">
       <ul class="navbar-nav mr-auto">
         <li>
-          <a class="nav-link" href="https://jhepc.github.io/">John Hunter - Excellence in Plotting - 2020</a>
+          <a class="nav-link" href="https://jhepc.github.io/">John Hunter -
+            Excellence in Plotting - 2020</a>
         </li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a class="nav-link" href="https://colour-science.org">colour-science.org</a></li>
+        <li><a class="nav-link"
+            href="https://colour-science.org">colour-science.org</a></li>
       </ul>
     </div>
   </nav>
@@ -92,43 +100,197 @@
             <img src="./resources/images/Gamut_Medicina_01.png"
               alt="Mansencal and Scharfenberg (2020) - HSV Control Based Study Model"
               class="figure-img img-fluid hand-pointer-on-hover gamut-medicina-1">
-            <figcaption class="figure-caption">Colour Developers Scientific Plot Entry for <a
-                href="https://jhepc.github.io/">John Hunter - Excellence in
-                Plotting - 2020</a>. Mansencal and Scharfenberg (2020) HSV Control Based Study Model applied
-              onto synthetic imagery. The Cornell Box scene is spectrally rendered with <a
-                href="https://mitsuba2.readthedocs.io/">Mitsuba
-                2: A Retargetable Forward and Inverse Renderer</a>.
+            <figcaption class="figure-caption">
+              <p>
+                <span class="font-weight-bold">Colour Developers Scientific
+                  Plot Entry</span> for <a href="https://jhepc.github.io/">
+                  <span class="font-weight-bold">John Hunter - Excellence in
+                    Plotting - 2020</span></a>: An interactive <a
+                  href="https://ipywidgets.readthedocs.io/en/latest/">Jupyter
+                  Widget</a> driving <em>Mansencal and Scharfenberg (2020) HSV
+                  Control Based Study Model</em> and performing gamut mapping
+                on scene-referred synthetic imagery.
+              </p>
+              <p>The Cornell Box scene is spectrally rendered with <a
+                  href="https://github.com/mitsuba-renderer/mitsuba2">Mitsuba
+                  2: A Retargetable Forward and Inverse (Open Source)
+                  Renderer</a>.
+              </p>
+              <div class="alert alert-dark" role="alert">
+                <b>Note:</b>&nbsp;Click on the image to show the effect of the
+                gamut mapping study model.
+              </div>
             </figcaption>
           </figure>
 
-          <h2 id="Abstract">Gamut Mapping of Scene-Referred Exposure Values<a class="anchor-link" href="#Abstract"></a>
+          <h2 id="Abstract">Gamut Mapping of Scene-Referred Light Values<a
+              class="anchor-link" href="#Abstract"></a>
           </h2>
+
           <p>
-            The <a href="https://www.oscars.org/science-technology/sci-tech-projects/aces">Academy Color Encoding System
-              (ACES)</a>a> is a free, open, device-independent color management and image interchange system used in the
-            production of movies, series or games. ACES adoption has increased during the last decade and the system is
-            becoming a successful standard in the Media and Entertainment Industry. However, amid of the growing
-            success, ACES users are frequently reporting defects occurring on their imagery while using the system.
+            The <a
+              href="https://www.oscars.org/science-technology/sci-tech-projects/aces">Academy
+              Color Encoding System
+              (ACES)</a> is a free, open, device-independent color management
+            and image interchange system used in the production of movies,
+            series and games. ACES adoption has increased during the last
+            decade and the system is becoming a successful standard in the
+            Media and Entertainment Industry. However, amid of the growing
+            success, ACES users are frequently reporting defects occurring on
+            their imagery while using the system.
           </p>
-          <p>The </p>
+
+          <div class="alert alert-dark" role="alert">
+            <b>Note:</b>&nbsp;It is assumed that the reader has basic knowledge
+            about image processing and colour management in the Media and
+            Entertainment Industry. An introductory publication on these topics
+            is <a href="https://cinematiccolor.org/">Cinematic Color: From Your
+              Monitor to the Big Screen</a> by Selan (2012).
+          </div>
+
+          <p>The artefacts are often generated by digital still or
+            motion-picture cameras: their spectral sensitivities do not satisfy
+            the <a
+              href="https://en.wikipedia.org/wiki/Tristimulus_colorimeter">Maxwell-Ives
+              criterion (Luther condition)</a>. Put another way, they are not
+            colorimetric and capture the world differently than a <a>Standard
+              Observer</a>. Ultimately, they produce non-physically realisable
+            values outside the <a
+              href="https://en.wikipedia.org/wiki/Spectral_color">Spectral
+              Locus</a>, which defines the extent of the <em>Standard
+              Observer</em> sensitivity to the electro-magnetic spectrum.
+            Colour grading tools used to infuse the creative vision into the
+            imagery are also a potential source for defect generation.
+          </p>
+          <figure class="figure">
+            <img
+              src="./resources/images/5DMarkII_Spac-o-ween_001_GamutMedicinaHSVControlWidget.png"
+              alt="Show Out-of-Gamut Colours"
+              class="figure-img img-fluid hand-pointer-on-hover out-of-gamut-1">
+            <figcaption class="figure-caption">
+              <p>
+                The <em>1976 UCS Chromaticity Diagram</em> on the left
+                highlights particularly well the non-colorimetric behaviour of
+                the Canon 5D Mark II. The <em>Spectral Locus</em> is
+                represented by the largest colour-varying and rounded triangle.
+                The red triangle defines the primaries of the standard ACES RGB
+                working colourspace, i.e. ACES AP1, and the gray triangle that
+                of the display colourspace, i.e. sRGB.
+              </p>
+              <p>
+                Note how the blue colours on the astronaut suits, which are
+                outside of the <em>Spectral Locus</em> are clamped.
+              </p>
+              <div class="alert alert-dark" role="alert">
+                <b>Note:</b>&nbsp;Click on the image to show the ACES AP1
+                out-of-gamut colours.
+              </div>
+            </figcaption>
+          </figure>
+          <p>
+            In the context of this document and the portion of interest of the
+            ACES pipeline, the imagery is said to be in a
+            <em>scene-referred</em> state. A scene-referred image encodes light
+            values as they were captured at the camera focal plane in a given
+            scene. The encoded values are intrinsically linear, and
+            proportional, relatively, to the incident light from the scene to
+            the camera.</p>
+          <p>
+            The <a href="https://www.oscars.org/">A.M.P.A.S</a> formed a new
+            <a
+              href="https://community.acescentral.com/t/new-aces-working-group-gamut-mapping">Virtual
+              Working Group</a> with the objective of finding strategies to
+            manage and correct the artefacts. The Virtual Working Group is
+            researching a source-agnostic model that allows the mapping of
+            scene-referred light values from any source, i.e. any light
+            capturing device, irrespective of its sensitivities, to a target
+            RGB colourspace primaries, e.g. ACES AP1.
+          </p>
+          <p>As a contribution to the initiative, the <a
+              href="https://colour-science.org/">Colour Developers</a> have
+            designed and built an <a
+              href="https://github.com/colour-science/gamut-mapping-ramblings/blob/master/notebooks/gamut_mapping_medicina_01.ipynb">interactive
+              Jupyter Widget</a>
+            to explore the problem space. The widget leverages <a
+              href="https://github.com/colour-science/colour">Colour</a>, an
+            open-source Python package providing a comprehensive number of
+            algorithms and datasets for colour science and <a
+              href="https://matplotlib.org/">Matplotlib</a>.</p>
+          <p>
+            As of this writing, the widget implements two gamut mapping study
+            models via sub-classes:
+            <ul>
+              <li><em>Mansencal and Scharfenberg (2020) HSV Control Based Study
+                  Model</em> built on top of the <a
+                  href="https://en.wikipedia.org/wiki/HSL_and_HSV">HSV
+                  colourspace</a></li>
+              <li><em>Smith (2020) - RGB Saturation Study Model</em> built on
+                top of the <a
+                  href="https://en.wikipedia.org/wiki/Color_spaces_with_RGB_primaries">RGB
+                  colourspace</a></li>
+            </ul>
+
+            <figure class="figure">
+              <img src="./resources/images/Gamut_Medicina_03.png"
+                alt="Mansencal and Scharfenberg (2020) - HSV Control Based & Smith (2020) RGB Saturation Study Models"
+                class="figure-img img-fluid hand-pointer-on-hover gamut-medicina-3">
+              <figcaption class="figure-caption">
+                <p>
+                  <em>Mansencal and Scharfenberg (2020) HSV Control Based Study
+                    Model</em> compared with <em>Smith (2020) RGB Saturation
+                    Study Model</em>. Out of the box, Smith (2020) model
+                  produces less hue distortion and more pleasing output. It is
+                  also simpler, faster and more elegant but lacks hue twists
+                  controls.
+                </p>
+                <div class="alert alert-dark" role="alert">
+                  <b>Note:</b>&nbsp;Click on the image to show the effect of
+                  the gamut mapping study model.
+                </div>
+              </figcaption>
+            </figure>
+
+            Various gamut mapping controls are offered such as changing the
+            compression function and its effect, or, hue twist controls for the
+            <em>HSV Control Based Study Model</em>. The widget also implement
+            various viewing controls such as showing the out-of-gamut colours
+            or image exposure adjustments.
+          </p>
           <figure class="figure">
             <img src="./resources/images/Gamut_Medicina_02.png"
               alt="Mansencal and Scharfenberg (2020) - HSV Control Based Study Model"
               class="figure-img img-fluid hand-pointer-on-hover gamut-medicina-2">
-            <figcaption class="figure-caption">Mansencal and Scharfenberg (2020) HSV Control Based Study Model applied
-              onto a photograph.
+            <figcaption class="figure-caption">
+              <p>
+                <em>Mansencal and Scharfenberg (2020) HSV Control Based Study
+                  Model</em> applied onto a photograph.
+              </p>
+              <div class="alert alert-dark" role="alert">
+                <b>Note:</b>&nbsp;Click on the image to show the effect of the
+                gamut mapping study model.
+              </div>
             </figcaption>
           </figure>
 
-          <figure class="figure">
-            <img src="./resources/images/Gamut_Medicina_03.png"
-              alt="Mansencal and Scharfenberg (2020) - HSV Control Based & Smith (2020) RGB Saturation Study Models"
-              class="figure-img img-fluid hand-pointer-on-hover gamut-medicina-3">
-            <figcaption class="figure-caption">Mansencal and Scharfenberg (2020) HSV Control Based Study Model compared
-              with Smith (2020) RGB Saturation Study Model.
-            </figcaption>
-          </figure>
-
+          <p>
+            While being order of magnitude slower than commercial applications
+            such as <a
+              href="https://www.blackmagicdesign.com/products/davinciresolve">Davinci
+              Resolve</a> or <a
+              href="https://www.foundry.com/products/nuke">The Foundry
+              Nuke</a>, the interactive widget is extremely useful as it allows
+            to tap directly into the entire Python scientific ecosystem while
+            promoting <em>Open Source Software</em> and reproducible research.
+          </p>
+          <p>
+            More information is available on the <a
+              href="https://github.com/colour-science/gamut-mapping-ramblings">colour-science's
+              Gamut Mapping Ramblings repository</a>.
+          </p>
+          <p class="text-center font-weight-bolder">
+            Copyright © 2020 – Colour Developers – <a
+              href="mailto:colour-developers@colour-science.org">colour-developers@colour-science.org</a>
+          </p>
         </div>
       </div>
     </div>
@@ -141,23 +303,42 @@
   <script>
     $(".gamut-medicina-1").click(function () {
       var source;
-      if ($(this).attr("src") == "./resources/images/Gamut_Medicina_01.png") {
-        $(this).attr("src", "./resources/images/Gamut_Medicina_01_Disabled.png");
+      if ($(this).attr("src") ==
+        "./resources/images/Gamut_Medicina_01.png") {
+        $(this).attr("src",
+          "./resources/images/Gamut_Medicina_01_Disabled.png");
       } else {
         $(this).attr("src", "./resources/images/Gamut_Medicina_01.png");
       }
     });
+    $(".out-of-gamut-1").click(function () {
+      var source;
+      if ($(this).attr("src") ==
+        "./resources/images/5DMarkII_Spac-o-ween_001_GamutMedicinaHSVControlWidget.png"
+      ) {
+        $(this).attr("src",
+          "./resources/images/5DMarkII_Spac-o-ween_001_GamutMedicinaHSVControlWidget_OutOfGamut.png"
+        );
+      } else {
+        $(this).attr("src",
+          "./resources/images/5DMarkII_Spac-o-ween_001_GamutMedicinaHSVControlWidget.png"
+        );
+      }
+    });
     $(".gamut-medicina-2").click(function () {
       var source;
-      if ($(this).attr("src") == "./resources/images/Gamut_Medicina_02.png") {
-        $(this).attr("src", "./resources/images/Gamut_Medicina_02_Disabled.png");
+      if ($(this).attr("src") ==
+        "./resources/images/Gamut_Medicina_02.png") {
+        $(this).attr("src",
+          "./resources/images/Gamut_Medicina_02_Disabled.png");
       } else {
         $(this).attr("src", "./resources/images/Gamut_Medicina_02.png");
       }
     });
     $(".gamut-medicina-3").click(function () {
       var source;
-      if ($(this).attr("src") == "./resources/images/Gamut_Medicina_03.png") {
+      if ($(this).attr("src") ==
+        "./resources/images/Gamut_Medicina_03.png") {
         source = "./resources/images/Gamut_Medicina_04.png";
         $(this).attr("src", source);
       } else {
