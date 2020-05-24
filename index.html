@@ -108,10 +108,12 @@
                     Plotting - 2020</span></a>: An interactive <a
                   href="https://ipywidgets.readthedocs.io/en/latest/">Jupyter
                   Widget</a> driving <em>Mansencal and Scharfenberg (2020) HSV
-                  Control Based Study Model</em> and performing gamut mapping
+                  Control Based Study Model</em>, and performing gamut mapping
                 on scene-referred synthetic imagery.
               </p>
-              <p>The Cornell Box scene is spectrally rendered with <a
+              <p>The <a
+                  href="https://github.com/colour-science/colour-mitsuba">Cornell
+                  Box</a> is spectrally rendered with <a
                   href="https://github.com/mitsuba-renderer/mitsuba2">Mitsuba
                   2: A Retargetable Forward and Inverse (Open Source)
                   Renderer</a>.
@@ -153,9 +155,9 @@
             the <a
               href="https://en.wikipedia.org/wiki/Tristimulus_colorimeter">Maxwell-Ives
               criterion (Luther condition)</a>. Put another way, they are not
-            colorimetric and capture the world differently than a <a>Standard
-              Observer</a>. Ultimately, they produce non-physically realisable
-            values outside the <a
+            colorimetric and capture the world differently than the <a>Standard
+              Observer</a>, i.e. an average human viewer. Ultimately, they
+            produce non-physically realisable values outside the <a
               href="https://en.wikipedia.org/wiki/Spectral_color">Spectral
               Locus</a>, which defines the extent of the <em>Standard
               Observer</em> sensitivity to the electro-magnetic spectrum.
@@ -178,8 +180,9 @@
                 of the display colourspace, i.e. sRGB.
               </p>
               <p>
-                Note how the blue colours on the astronaut suits, which are
-                outside of the <em>Spectral Locus</em> are clamped.
+                Note how the astronaut suits, and the luminous tiles on the
+                floor, whose colours are outside of the
+                <em>Spectral Locus</em>, are clamped.
               </p>
               <div class="alert alert-dark" role="alert">
                 <b>Note:</b>&nbsp;Click on the image to show the ACES AP1
@@ -188,7 +191,7 @@
             </figcaption>
           </figure>
           <p>
-            In the context of this document and the portion of interest of the
+            In the context of this document, and the portion of interest of the
             ACES pipeline, the imagery is said to be in a
             <em>scene-referred</em> state. A scene-referred image encodes light
             values as they were captured at the camera focal plane in a given
@@ -201,7 +204,7 @@
               href="https://community.acescentral.com/t/new-aces-working-group-gamut-mapping">Virtual
               Working Group</a> with the objective of finding strategies to
             manage and correct the artefacts. The Virtual Working Group is
-            researching a source-agnostic model that allows the mapping of
+            researching a source-agnostic model that performs the mapping of
             scene-referred light values from any source, i.e. any light
             capturing device, irrespective of its sensitivities, to a target
             RGB colourspace primaries, e.g. ACES AP1.
@@ -214,7 +217,7 @@
             to explore the problem space. The widget leverages <a
               href="https://github.com/colour-science/colour">Colour</a>, an
             open-source Python package providing a comprehensive number of
-            algorithms and datasets for colour science and <a
+            algorithms and datasets for colour science, and <a
               href="https://matplotlib.org/">Matplotlib</a>.</p>
           <p>
             As of this writing, the widget implements two gamut mapping study
@@ -239,13 +242,13 @@
                   <em>Mansencal and Scharfenberg (2020) HSV Control Based Study
                     Model</em> compared with <em>Smith (2020) RGB Saturation
                     Study Model</em>. Out of the box, Smith (2020) model
-                  produces less hue distortion and more pleasing output. It is
+                  produces less hue clumping and more pleasing output. It is
                   also simpler, faster and more elegant but lacks hue twists
                   controls.
                 </p>
                 <div class="alert alert-dark" role="alert">
-                  <b>Note:</b>&nbsp;Click on the image to show the effect of
-                  the gamut mapping study model.
+                  <b>Note:</b>&nbsp;Click on the image to compare the effect of
+                  both gamut mapping study models.
                 </div>
               </figcaption>
             </figure>
