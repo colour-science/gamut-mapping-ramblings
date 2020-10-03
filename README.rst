@@ -57,7 +57,7 @@ main dependencies, assuming you have created and activated a
 
 .. code-block:: bash
 
-    $ pip install -r requirements.txt
+    $ pip install --user -r requirements.txt
     $ python -c "import imageio;imageio.plugins.freeimage.download()"
     $ jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib
 
