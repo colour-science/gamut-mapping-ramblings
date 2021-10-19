@@ -8,3 +8,4 @@
 __pycache__
 poetry.lock
 resources/images/Colour_Wheel.exr
+.venv
