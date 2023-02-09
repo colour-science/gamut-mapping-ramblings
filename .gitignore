@@ -4,7 +4,7 @@
 *.pyo
 .DS_Store
 .idea
-.ipynb_checkpoints/
+.ipynb_checkpoints
 __pycache__
 poetry.lock
 resources/images/Colour_Wheel.exr
